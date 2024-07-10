@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    font-family: "Chakra Petch" , sans-serif;
+}
+
+.profile-container{
+    width: 100%;
+    min-height: 700px;
+    background-color: black;
+}
+.FED{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.personal{
+    color: white;
+    font-family: "Chakra Petch" , sans-serif;
+    max-width: 50%;
+    position:relative;
+    left: 150px;
+    top: 60px;
+    font-size: 28px;
+    overflow-y: hidden;
+}
+.about-mebtn{
+    background-color: rgb(255, 165, 0);
+    background: linear-gradient(to right , rgb(255, 165, 0),rgba(252, 19, 19, 0.771));
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 800;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.projects{
+    width: 100%;
+    min-height: 600px;
+    background-color: rgb(184, 184, 184);
+    padding: 40px;
+    
+
+}
+.about-me{
+   width: 38%;
+   height: 100%;
+    border: 2px solid  rgb(255, 165, 0);;
+    position: absolute;
+    top: 20px;
+    right: 29px;
+    height: 343.2px;
+    color: white;
+    padding: 20px;
+    transform: scale(0);
+    overflow-y: hidden;
+    border-radius: 15px;
+}
+
+.about-me.show{
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+.about-me h3{
+    position: relative;
+    left: 38%;
+    top: -10px;
+    font-size: 24px;
+    text-decoration: underline;
+  
+    
+}
+.about-me p{
+    line-height: 1.8;
+    font-size: 24px;
+    position: relative;
+    top: -10px;
+}
+.close-icon{
+    display: none;
+}
+.skills{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 263px;
+    left: 68px;
+    display: inline;
+}
+.skills h1{
+    display: flex;
+    max-width: 600px;
+}
+.skills-img{
+    display: flex;
+    position: absolute;
+    /* right: 250px;
+    bottom: -64px; */
+    /* top: 65px; */
+    /* margin-left: 0px; */
+    gap: 70px;
+    right: 100px;
+    bottom: -89px;
+    top: -57px;
+}
+.html-div , .css-div , .js-div{
+    width: 200px;
+    height: 184px;
+    object-fit: cover;
+    text-align: center;
+}
+.html-div:hover , .css-div:hover , .js-div:hover{
+    transform: scale(1.09);
+    transition: transform 0.2s;
+    /* overflow-y: scroll; */
+
+}
+
+.html{
+    width: 150px;
+    height: 150px;
+}
+.css{
+    width: 150px;
+    height: 150px;
+}
+.js{
+    width: 150px;
+    height: 150px;
+}
+.projects h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.proj-img{
+    display: inline-flex;
+    gap: 300px;
+    width: 100%;
+    /* overflow-y: scroll; */
+    overscroll-behavior: none contain;
+    overflow-y: hidden;
+
+}
+
+.projects img{
+    height: 250px;
+    min-width: 100%;
+    object-fit: cover;
+
+}
+.caption{
+    text-align: center;
+    font-size: 18px;
+}
+
+.proj1 , .proj2 , .proj3{
+   min-width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 40px;
+    background-color: rgb(228, 226, 226,0.5);
+    border-radius: 10px;
+
+}
+.proj1:hover , .proj2:hover , .proj3:hover{
+    transform: scale(1.09);
+    transition: transform 0.2s;
+    /* overflow-y: scroll; */
+    overscroll-behavior: none contain;
+
+
+}
+footer{
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    overflow-y: hidden;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    overflow-y: hidden;
+    /* color: rgba(225, 124, 0, 0.86); */
+}
+.icons a{
+    color: rgba(225, 124, 0, 0.86);
+}
+
+.inst , .git , .link , .email{
+    width: 50px;
+    /* height: 50px; */
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+.inst:hover , .git:hover , .link:hover , .email:hover{
+    transform: scale(1.08);
+    transition: transform 0.2s;
+    overscroll-behavior: none contain;
+    /* overflow-y: hidden; */
+}
+
+@media(max-width:1440px){
+    .personal{
+        left: 60px;
+        font-size: 18px;
+    }
+    .about-me{
+        width: 43%;
+        border-radius: 15px;
+    }
+    .about-me h3{
+        font-size: 18px;
+        top: -10px;
+    }
+    .about-me p{
+      font-size:18px ;
+      top: -3px;
+    }
+    .about-mebtn{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .skills h1{
+       margin-top: -50px;
+       /* font-size: 30px; */
+       width: 590px;
+       
+    }
+    .skills-img{
+        left: 0px;
+        bottom: -200px;
+        /* top: 65px; */
+        /* margin-left: 0px; */
+        gap: 70px;
+        object-fit: cover;
+        top: 65px;
+        margin-top: 33px;
+        overflow-y: hidden;
+        
+    }
+    .skills img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    
+    }
+    .html-div , .css-div , .js-div{
+        width: 154px;
+        height: 194px;
+        object-fit: cover;
+        text-align: center;
+    }
+    .projects h1{
+        font-size: 35px;
+    }
+    .projects img{
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+        
+    
+    }
+    .proj1 , .proj2 , .proj3{
+       min-width: 150px;
+        height: 320px;
+        object-fit: cover;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .proj-img{  
+        gap: 40px;
+        width: 100%;
+    }
+    .caption{
+        font-size: 20px;
+    }
+
+}
+@media(max-width:730px){
+    .personal{
+        left: 33px;
+        display: inline;
+        font-size: 18px;
+        line-height: 1.5;
+        
+    }
+    .personal h1{
+        margin-bottom: 15px;
+    }
+   .about-mebtn{
+    display: inline;
+    position: absolute;
+    top: 218px;
+    left: 30%;
+   }
+
+    .about-me{
+        /* background-color: gray; */
+        transform: translate(-100%,-100%) scale(0);
+        z-index: 1000;
+        background: linear-gradient(to right, rgb(204 143 30), rgb(210 14 14));
+        width: 80%;
+        height: 383px;
+        border-radius: 25px;
+    }
+    .about-me .show{
+        transform: translate(-100%,-100%) scale(1);
+        width: 100%;
+        /* z-index: 1000; */
+        /* background-color: red; */
+    }
+    .about-me h3{
+        left: 33%;
+        display: inline;
+    }
+    .close-icon{
+        display: inline;
+        position: absolute;
+        right: 5px;
+        top: -2px;
+        font-size: 25px;
+    }
+    
+    .personal .about-me .show {
+        z-index: -1;
+    }
+    .skills h1{
+        /* justify-content: center; */
+        font-size: 25px;
+        display: flex;
+        position: relative;
+        left: -55px;
+        margin-top: 30px;
+        
+    }
+    .skills-img{
+        display: flex;
+        left: -20px;
+        gap: 25px;
+        margin-top: 30px;
+    }
+    .skills-img p{
+        font-size: 15px;
+    }
+    .skills img{
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        /* gap: 25px; */
+    }
+    .html-div , .css-div , .js-div{
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        text-align: center;
+    }
+    .projects h1{
+        font-size: 30px;
+    }
+    .proj-img{
+        display: block;
+    }
+    .proj1 , .proj2 , .proj3{
+        display: block;
+    }
+
+}
